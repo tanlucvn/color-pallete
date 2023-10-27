@@ -1,0 +1,34 @@
+ <Color src={image.download_url} crossOrigin="anonymous" format="hex">
+                                {({ data, loading }) => {
+                                    if (loading) return <Loading />;
+                                    return (
+                                        <div>
+                                            {/* <h5>Prediminant Color:</h5> */}
+                                            <div
+                                                class="rounded-circle mx-1 pallete-item"
+                                                style={{ background: data }}
+                                            />
+                                        </div>
+                                    );
+                                }}
+                            </Color>
+                            <Palette src={image.download_url} crossOrigin="anonymous" format="hex" colorCount={4}>
+                                {({ data, loading }) => {
+                                    if (loading) return <Loading />;
+                                    return (
+                                        <div>
+                                            <ul>
+                                                {data.map((color, index) => (
+                                                    <div key={index}>
+                                                        <div
+                                                            class="rounded-circle mx-1 pallete-item"
+                                                            style={{ background: color }}
+                                                        />
+                                                    </div>
+
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    );
+                                }}
+                            </Palette>
