@@ -1,16 +1,17 @@
 .library-body {
-    width: 94%;
-    height: 90%;
-    padding: 3%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
     overflow-y: auto;
     justify-content: space-between;
 }
   
 .playlist-card {
     position: relative;
-    width: 20%;
+    width: 100%;
     height: fit-content;
     border-radius: 20px;
     background-color: rgb(30, 42, 62);
@@ -96,7 +97,7 @@
     bottom: 0;
     margin-bottom: 5px;
     transform: translate(-50%);
-    color: #C2CCD6;
+    color: var(--silver);
     font-size: 16px;
     white-space: nowrap;
     backdrop-filter: blur(16px) saturate(180%);
@@ -112,7 +113,7 @@
     cursor: pointer;
 }
 .control-item:hover {
-    color: #f0f2f5;
+    color: var(--aqua-haze);
     transform: scale(1.02);
 }
 
@@ -132,7 +133,7 @@
 
 /* ================= CARD ================= */
 .card-pallete{
-    padding: 1rem 0rem;
+    padding: 1rem 1rem;
 }
 .card-pallete-title{
     font-weight: 800;

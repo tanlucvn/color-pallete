@@ -1,6 +1,6 @@
 .screen-container {
-    width: calc(100% - 100px);
-    height: 100%;
+    width: 100%;
+    padding: 3%;
     background-color: #1e2a3e;
     background-color: #1e2a3e;
     opacity: 1;

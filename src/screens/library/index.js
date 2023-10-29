@@ -145,11 +145,6 @@ export default function Library() {
                                 }}
                             </Palette>
                         </div>
-                        {/*                         <div className="playlist-fade">
-                            <IconContext.Provider value={{ size: "35px", color: "rgba(196, 208, 227, 1)" }}>
-                                <BsFillArrowRightCircleFill />
-                            </IconContext.Provider>
-                        </div> */}
                     </div>
                 ))}
             </div>

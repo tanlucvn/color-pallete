@@ -1,10 +1,20 @@
-import React from "react";
-import Home from "./screens/home";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Library from './screens/library'
+import NotFound from './screens/404'
+import Sidebar from './components/sidebar'
+import './App.css'
 
-function App() {
+export default function App() {
   return (
-    <><Home /></>
-  );
+    <Router>
+      <div className='main-body'>
+        <Sidebar />
+        <Routes>
+          <Route path='/' element={<Library />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
-
-export default App;

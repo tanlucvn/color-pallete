@@ -2,10 +2,13 @@
 
 :root{
   --yankees-blue: rgb(19, 34, 58);
+  --dark-jungle-green: rgb(20, 28, 44);
   --slate-gray: rgb(113, 130, 151);
   --shadow-blue: rgb(121, 141, 161);
   --metallic-silver: rgb(158, 169, 186);
   --matallic-rocket: rgb(140, 124, 124);
+  --aqua-haze: rgb(240, 242, 245);
+  --silver: rgb(194, 204, 214);
 }
 
 body {
@@ -43,4 +46,46 @@ code {
 
 ::-webkit-scrollbar-track:hover {
   background: #233656; 
+}
+
+@media (max-width: 768px) {
+  .screen-container{
+    width: 100%;
+  }
+  .sidebar-container {
+    width: 60px !important; 
+    border-right: 1px solid var(--yankees-blue);
+  }
+  .profile-img{
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .btn-body{
+    border-radius: 0 !important;
+  }
+  .btn-body.active{
+    width: 55px;
+  }
+  .btn-title{
+    display: none;
+  }
+  .profile-img {
+    width: 40px; 
+    height: 40px;
+    margin-top: 10px; 
+  }
+  .playlist-card{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 15px;
+  }
+  .playlist-card:hover {
+    transform: none !important;
+  }
+  .controls{
+    left: 58% !important;
+  }
+  #control-k-means, #control-histogram{
+    display: none;
+  }
 }
