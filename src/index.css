@@ -1,13 +1,13 @@
 @import url(./shared/globalStyles.css);
 
-:root{
-  --yankees-blue: rgb(19, 34, 58);
+:root{ 
+  --yankees-blue: rgb(19, 34, 58); /* #13223A */
   --dark-jungle-green: rgb(20, 28, 44);
   --slate-gray: rgb(113, 130, 151);
   --shadow-blue: rgb(121, 141, 161);
   --metallic-silver: rgb(158, 169, 186);
   --matallic-rocket: rgb(140, 124, 124);
-  --aqua-haze: rgb(240, 242, 245);
+  --aqua-haze: rgb(240, 242, 245); /* #F0F2F5 */
   --silver: rgb(194, 204, 214);
 }
 

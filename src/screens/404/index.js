@@ -1,8 +1,10 @@
 // Copy from https://codepen.io/juliepark/pen/erOoeZ
-
+import { useNavigate } from 'react-router-dom'
 import './index.css'
 
 export default function NotFound() {
+  let navigate = useNavigate();
+
   return (
     <div className="screen-container">
       <div className='notfound-container'>
@@ -30,8 +32,8 @@ export default function NotFound() {
           </div>
           <div class="bottom">
             <div class="buttons">
-              <button class="btn">Back</button>
-              <button class="btn">Home</button>
+              <button class="btn" onClick={() => { navigate(-1) }}>Back</button>
+              <button class="btn" onClick={() => { navigate("/") }}>Home</button>
             </div>
           </div>
         </div>
