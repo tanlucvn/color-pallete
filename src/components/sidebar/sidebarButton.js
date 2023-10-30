@@ -13,7 +13,7 @@ export default function SidebarButton(props) {
         <Link to={props.to}>
             <div className={btnClass}>
                 <IconContext.Provider value={{ size: '24px', className: 'btn-icon' }}>
-                    {props.icon}
+                    {isActive ? props.loc : props.icon}
                     <p className='btn-title'>{props.title}</p>
                 </IconContext.Provider>
             </div>
